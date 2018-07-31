@@ -9,6 +9,8 @@ class MyApp < Sinatra::Base
   end
   
     get '/potato' do
+      @num1=4
+      @num2=3
     erb :potato
   end
   
@@ -16,15 +18,15 @@ class MyApp < Sinatra::Base
     erb :berry
   end
 
- get '/' do
-   @num1 = 4
-    erb :index
-  end
+# get '/' do
+#   @num1 = 4
+#     erb :index
+#   end
   
-   get '/' do
-     @num2 = 3
-    erb :index
-  end
+#   get '/' do
+#     @num2 = 3
+#     erb :index
+#   end
   
   
 end
