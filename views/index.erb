@@ -11,7 +11,12 @@
 </p>
 
 <p> I'm going to pick a number 1 to 100!</p>
-<p> <%=rand(1..100)%></p>
+<p> <%=@rand =rand(1..100)%></p>
 
+<p> the random number i picked is <%if @rand%2==0 %>
+  <%=even%>
+  <% else %> 
+  <%=odd%> 
+</p>
 </body>
 </html>
