@@ -11,7 +11,7 @@ class MyApp < Sinatra::Base
     get '/potato' do
       @num1=4
       @num2=3
-      @homtown = "draper"
+      @hometown = "draper"
     erb :potato
   end
   
