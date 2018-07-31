@@ -16,4 +16,14 @@ class MyApp < Sinatra::Base
     erb :berry
   end
 
+ get '/' do
+   @num1 = 4
+    erb :index
+  end
+  
+   get '/' do
+     @num2 = 3
+    erb :index
+  end
+  
 end
