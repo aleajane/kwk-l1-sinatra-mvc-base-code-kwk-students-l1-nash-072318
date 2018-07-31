@@ -17,12 +17,12 @@ class MyApp < Sinatra::Base
   end
 
  get '/' do
-   @num1 = "4"
+   @num1 = 4
     erb :index
   end
   
    get '/' do
-     @num2 = "3"
+     @num2 = 3
     erb :index
   end
   
